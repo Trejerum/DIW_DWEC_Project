@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/memoryGameStyles.css">
+    <script src="../js/memoryGameScript.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="rememberGame">
+      <header class="rememberHeader">
+        <p id="punctuation"></p>
+        <p id="level"></p>
+        <p id="errors"></p>
+      </header>
+      <div class="rememberContainer">
+      </div>
+      <div class="rememberMenu">
+        <form class="rememberDifficultyForm" action="index.html" method="post">
+          <p>Game Difficulty: </p>
+          <input type="radio" name="rememberDifficulty" value="easy">Easy</input>
+          <input type="radio" name="rememberDifficulty" value="normal" checked>Normal</input>
+          <input type="radio" name="rememberDifficulty" value="hard">Hard</input>
+          <br>
+          <button type="button" id="startGameButton" name="startGame" onclick="start();">Start Game</button>
+          <br>
+          <button type="button" id="exitButton" name="exitButton" onclick="exit();">Exit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

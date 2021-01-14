@@ -1,0 +1,100 @@
+*, html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #333333;
+}
+
+.rememberGame {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.rememberContainer {
+  background-color: grey;
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.rememberHeader {
+  background-color: #e6e6e6;
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rememberHeader p{
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.objective {
+  float: left;
+  width: 300px;
+  height: 200px;
+  background-color: grey;
+  display: inline-block;
+}
+
+.objective:hover {
+  border: 2px solid #737373!important;
+}
+
+.rememberMenu {
+  position: absolute;
+  background-color: #d9d9d9;
+  top: 15%;
+  left: 35%;
+  height: 300px;
+  width: 500px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.rememberMenu p {
+  font-size: 1.1em;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.rememberMenu input {
+  margin-left: 10px;
+}
+
+#startGameButton, #exitButton {
+  margin-top: 15px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 1.2em;
+  background-color: #333333;
+  color: white;
+  border-radius: 5px;
+}
+
+#startGameButton {
+  width: 150px;
+  height: 50px;
+}
+
+#exitButton {
+  width: 100px;
+  height: 50px;
+}
+
+#startGameButton:hover {
+  background-color: #33cc33;
+}
+
+#exitButton:hover {
+  background-color: red;
+}
