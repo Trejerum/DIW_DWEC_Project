@@ -1,0 +1,105 @@
+body {
+  background-color: #685555;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  background-color: #fff;
+  width: 1400px;
+  height: 600px;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+.game {
+  min-width: 350px;
+  position: relative;
+}
+
+.game:nth-child(even) {
+  background-color: #959393;
+  color: black;
+}
+
+.game:nth-child(odd) {
+  background-color: #333333;
+  color: white;
+}
+
+.game:nth-child(even) h2 {
+  color: black;
+}
+
+.game:nth-child(odd) h2 {
+  color: white;
+}
+
+#game_1 {
+  background-image: url("../assets/game_icons/ic_remember_game.png");
+}
+
+#game_2 {
+  background-image: url("../assets/game_icons/ic_jumping_game.png");
+}
+
+#game_3 {
+  background-image: url("../assets/game_icons/ic_reflex_game.png");
+}
+
+#game_4 {
+  background-image: url("../assets/game_icons/ic_snake_game.png");
+}
+
+#game_5 {
+  background-image: url("../assets/game_icons/ic_shooting_game.png");
+}
+
+.game h2 {
+  text-align: center;
+}
+
+.game .resume {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.resumeBackground {
+  width: 100%;
+  height: 500px;
+  top: 50px;
+  position: absolute;
+}
+
+.resume {
+  position: absolute;
+  visibility: hidden;
+  top: 200px;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s, transform 1s;
+}
+
+.resume:hover {
+  transform: translateY(-50px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.resumeBackground:hover + .resume {
+  transform: translateY(-50px);
+  visibility: visible;
+  opacity: 1;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lightGrey;
+}
