@@ -1,0 +1,102 @@
+*, html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.reflexGame {
+  position: absolute;
+  background-color: grey;
+  color: white;
+}
+
+#reflexMainButton {
+  background-color: orange;
+  color: white;
+  font-size: 5em;
+  position: relative;
+  width: 80%;
+  height: 60%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 0;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.reflexIntructions {
+  width: 60%;
+  margin-top: 2%;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.reflexResultsContainer {
+  display: none;
+  background-color: #3399ff;
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  top: 3%;
+  left: 10%;
+}
+
+.reflexResultsContainer h2 {
+  text-align: center;
+  font-size: 4em;
+  margin: 20px 0 20px 0;
+  border-bottom: 3px solid black;
+}
+
+.reflexMyResults {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+}
+
+.reflexOtherResults {
+  display: inline-block;
+  margin: 0;
+}
+
+#reflexResultTable {
+  margin: 0 auto;
+}
+
+.reflexMyResults p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#reflexResultTable, #reflexResultTable tr, #reflexResultTable td,
+  #reflexResultTable th {
+  padding: 5px 20px 5px 20px;
+  border: 3px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#reflexResultTable th {
+  background-color: #4299f0 ;
+}
+
+.reflexResultsButtons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.reflexResultsButtons button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  font-size: 1em;
+  background-color: #000d1a;
+  color: white;
+  border-radius: 5px;
+}
+
+.reflexResultsButtons button:hover {
+  background-color: #7599bd;
+  color: black;
+}

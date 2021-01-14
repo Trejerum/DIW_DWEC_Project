@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pruebas</title>
+    <script src="../libs/jquery.js" charset="utf-8"></script>
+    <script src="../js/reflexGameScript.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../css/reflexGameStyles.css">
+  </head>
+  <body>
+    <div class="reflexGame">
+      <button type="button" name="button" id="reflexMainButton">START</button>
+      <div class="reflexIntructions">
+        <p>
+          To start the game press one time on the orange button.
+          When the light turns green press the button as fast as you can.
+          After 5 rounds your results will be displayed.
+        </p>
+      </div>
+      <div class="reflexResultsContainer">
+        <h2>Results</h2>
+        <div class="reflexResults">
+          <div class="reflexMyResults">
+            <p>This are your results</p>
+          </div>
+          <div class="reflexOtherResults">
+            <ul>
+              <li>The average reaction time for a person is 250ms</li>
+              <li>The results may vary depending on your connection, monitor
+                latency...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="reflexResultsButtons">
+          <button type="button" name="button" id="reflexRestartButton">Restart</button>
+          <button type="button" name="button" id="reflexExitButton">Exit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
