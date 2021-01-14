@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/jumpingGameStyles.css">
+    <script src="../libs/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/jumpingGameScript.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body onload="init();">
+    <div class="jumpingGame">
+      <div class="gameScreen">
+        <div class="sky">
+          <div class="punctuationContainer">
+            <p id="punctuation">Score: 0</p>
+            <p id="extraPoints"> + 100</p>
+          </div>
+          <div class="box"></div>
+        </div>
+        <div class="floor"></div>
+        <div class="gameOver">
+          <p id="gameOverText">Game over</p>
+          <button type="button" name="tryAgain" id="tryAgain" onclick="restart();">Try again</button>
+          <br/>
+          <a id="exitJumpingGame" href="../index.html">Exit</a>
+        </div>
+        <div class="jumpingGameInitCounterContainer">
+          <p id="jumpingGameInitCounter">6</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

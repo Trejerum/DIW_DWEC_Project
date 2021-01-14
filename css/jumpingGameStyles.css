@@ -1,0 +1,156 @@
+/*############################################################
+######################  All  #################################
+############################################################*/
+*, html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*############################################################
+######################  Jumping Game  ########################
+############################################################*/
+.jumpingGame {
+  background-color: #ccffcc;
+  position: absolute;
+  font-family: Lucida, monospace;
+}
+
+.jumpingGameInitCounterContainer {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 4em;
+}
+
+#jumpingGameInitCounter {
+  margin: 0;
+}
+
+.gameScreen {
+  background-color: lightBlue;
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.sky {
+  display: block;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  background-color:
+}
+
+.punctuationContainer {
+  height: 50px;
+  font-size: 2em;
+}
+
+#punctuation {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+#extraPoints {
+  display: none;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.box {
+  background-color: blue;
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 0px;
+  left: 250px;
+}
+
+.obstacle {
+  background-color: red;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  visibility: visible;
+}
+
+.floor {
+  background-color: #336600;
+  position: relative;
+  height: 200px;
+}
+
+.gameOver {
+  position: absolute;
+  display: none;
+  background-color: #bd7575;
+  top: 15%;
+  left: 35%;
+  height: 300px;
+  width: 500px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#gameOverText {
+  font-size: 4em;
+  font-weight: bolder;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+#tryAgain {
+  width: 200px;
+  height: 70px;
+  border: none;
+  font-size: 2em;
+  background-color: #a38f8f;
+  border-radius: 5px;
+}
+
+#tryAgain:hover {
+  color: white;
+  background-color: #999999;
+}
+
+#exitJumpingGame {
+  text-align: left;
+  display: block;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: lightgrey;
+}
+
+/*-- Animations -------------------------------------------------------------*/
+
+#extraPoints.disappear {
+  animation-name: disappear;
+  animation-duration: 500ms;
+  animation-delay: 1000ms;
+}
+
+.box.jump {
+  animation-name: jump;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+}
+
+@keyframes jump {
+  0%    {bottom: 0px;}
+  50%   {bottom: 150px;}
+  100%  {bottom: 0px;}
+}
+
+@keyframes disappear {
+  0%    {opacity: 1;}
+  50%   {opacity: 0.5;}
+  100%  {opacity: 0; display: none;}
+}
