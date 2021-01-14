@@ -13,3 +13,7 @@ function reflexGame() {
 function snakeGame() {
   location.href = "html/snakeGame.html";
 }
+
+function shootingGame() {
+  location.href =  "html/shootingGame.html";
+}

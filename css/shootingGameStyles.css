@@ -1,0 +1,150 @@
+*, html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.shootingGame {
+  width: 100%;
+  height: 100%;
+  background-color: #bfbfbf;
+}
+
+#countdown {
+  font-size: 4em;
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 49.5%;
+  z-index: 99;
+}
+
+header {
+  width: 60%;
+  margin: 0 auto;
+  height: 50px;
+  background-color: #333333;
+  z-index: -100;
+  user-select: none;
+  text-align: left;
+  color: white;
+}
+
+.punctuationContainer {
+  width: 48%;
+  height: 100%;
+  display: inline-block;
+  text-align: left;
+}
+
+.punctuationContainer h2{
+  margin-top: 10px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.timerContainer {
+  height: 100%;
+  display: inline-block;
+}
+
+#timer {
+  margin: 10px;
+}
+
+.target {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.shootingContainer {
+  width: 100%;
+  cursor: crosshair;
+  user-select: none;
+}
+
+.shootingBackground {
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+  background-color: #bfbfbf;
+}
+
+.shootingResultsContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.shootingResults {
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  background-color: #333333;
+  top: 15%;
+  left: 20%;
+  white-space: nowrap;
+}
+
+.shootingCurrentResults, .shootingBestResults {
+  display: inline-block;
+  width: 50%;
+  height: 85%;
+  text-align: left;
+  padding-left: 12%;
+}
+
+.shootingCurrentResults h2, .shootingBestResults h2{
+  margin-top: 20%;
+  margin-bottom: 10%;
+  font-size: 2.5em;
+}
+
+.shootingCurrentResults p {
+  margin-left: 5%;
+  margin-bottom: 7px;
+  font-size: 1.1em;
+}
+
+.shootingBestResults ol {
+  margin-left: 7%;
+  font-size: 1.3em;
+}
+
+.shootingCurrentResults {
+  background-color: #b3b3b3;
+  float: left;
+}
+
+.shootingBestResults {
+  background-color: #a6a6a6;
+}
+
+.shootingResultsButtons {
+  background-color: #4d4d4d;
+  height: 15%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.shootingResultsButtons button {
+  width: 120px;
+  height: 30px;
+  background-color: #e6e6e6;
+  margin-right: 15px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+}
+
+.shootingResultsButtons button:hover {
+  color: white;
+  background-color: #333333;
+}
