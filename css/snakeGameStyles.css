@@ -1,0 +1,80 @@
+*, html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.snakeGame {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  padding-top: 30px;
+  text-align: center;
+  font-family: Lucida, monospace;
+}
+
+#snakeCountdown {
+  position: absolute;
+  top: 35%;
+  left: 49%;
+  color: white;
+  font-size: 2.5em;
+  z-index: 99;
+}
+
+.snakePunctuationContainer {
+  width: 600px;
+  background-color: #4d4d4d;
+  color: white;
+  margin: 0 auto;
+}
+
+#snakePunctuation {
+  font-size: 1.5em;
+}
+
+#snakeCanvas {
+  background-color: black;
+  position: relative;
+}
+
+.snakeGameOver {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #e6e6e6;
+  position: relative;
+}
+
+.snakeGameOver h2 {
+  font-size: 4em;
+  padding-top: 15%;
+  padding-bottom: 5%;
+}
+
+.snakeGameOver button {
+  width: 200px;
+  height: 70px;
+  background-color: #262626;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  color: white;
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+#snakeRestart {
+  display: block;
+  margin: 0 auto;
+}
+
+#snakeRestart:hover {
+  background-color: green;
+  color: black;
+}
+
+#snakeExit:hover {
+  background-color: red;
+  color: black;
+}

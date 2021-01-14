@@ -9,3 +9,7 @@ function jumpingGame() {
 function reflexGame() {
   location.href = "html/reflexGame.html";
 }
+
+function snakeGame() {
+  location.href = "html/snakeGame.html";
+}
