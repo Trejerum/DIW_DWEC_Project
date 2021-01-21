@@ -1,3 +1,13 @@
+/*############################################################
+######################  Index  ###############################
+############################################################*/
+
+*, html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #685555;
   user-select: none;
@@ -17,6 +27,8 @@ body {
   position: relative;
 }
 
+/*-- Colors for each game ---------------------------------------------------*/
+
 .game:nth-child(even) {
   background-color: #959393;
   color: black;
@@ -35,6 +47,7 @@ body {
   color: white;
 }
 
+/*-- Images for each game ---------------------------------------------------*/
 #game_1 {
   background-image: url("../assets/game_icons/ic_remember_game.png");
 }
@@ -58,6 +71,8 @@ body {
 .game h2 {
   text-align: center;
 }
+
+/*-- Games resumes ----------------------------------------------------------*/
 
 .game .resume {
   padding-left: 25px;
