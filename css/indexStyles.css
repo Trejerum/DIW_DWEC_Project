@@ -9,8 +9,21 @@
 }
 
 body {
-  background-color: #685555;
+  background-color: #CBCDCB;
   user-select: none;
+  font-family: Arial;
+}
+
+header {
+  background-color: #607D86;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+header h1 {
+  font-size: 3em;
+  text-align: center;
 }
 
 .container {
@@ -37,6 +50,10 @@ body {
 .game:nth-child(odd) {
   background-color: #333333;
   color: white;
+}
+
+.game h2 {
+  margin-top: 10px;
 }
 
 .game:nth-child(even) h2 {
