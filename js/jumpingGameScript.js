@@ -107,6 +107,9 @@ function start() {
   changeVelocity();
 }
 
+/**
+ * Creates random obstacles
+ */
 function createObstaclesRandomly() {
   if(isGameRunning) {
     createObstacle();
