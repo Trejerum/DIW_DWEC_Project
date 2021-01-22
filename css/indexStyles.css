@@ -9,16 +9,17 @@
 }
 
 body {
-  background-color: #CBCDCB;
+  background-image: url("../assets/wallpaper.jpg");
   user-select: none;
   font-family: Arial;
 }
 
 header {
-  background-color: #607D86;
+  background-color: #145214;
   margin-bottom: 20px;
-  margin-top: 20px;
   padding: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 header h1 {
@@ -33,6 +34,9 @@ header h1 {
   height: 600px;
   overflow-x: auto;
   margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .game {
