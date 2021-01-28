@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+body {
+  font-family: Arial;
+}
+
 .reflexGame {
   position: absolute;
   background-color: grey;

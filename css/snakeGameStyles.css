@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+body {
+  font-family: Arial;
+}
+
 .snakeGame {
   width: 100%;
   height: 100%;
